@@ -1,16 +1,37 @@
-# Simple Iris Prediction — Streamlit
+# 🌸 Simple Iris Prediction — Streamlit App
 
-Small demo app to predict Iris species from four features using a RandomForest model and Streamlit.
+A machine learning–based Streamlit web application that predicts the species of an Iris flower using four input features.  
+The project uses a Random Forest classifier trained on the classic Iris dataset.
 
-Run locally
+## 🚀 Live Demo
+👉 https://simple-iris-prediction-app.streamlit.app/
+
+## 🧠 Model Details
+- Algorithm: Random Forest Classifier
+- Dataset: Iris Dataset
+- Input Features:
+  - Sepal Length
+  - Sepal Width
+  - Petal Length
+  - Petal Width
+- Output Classes:
+  - Setosa
+  - Versicolor
+  - Virginica
+
+## 🛠 Tech Stack
+- Python
+- Scikit-learn
+- Streamlit
+- NumPy
+- Pandas
+- Matplotlib
+- Joblib
+
+## ▶️ Run Locally
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run app.py
-```
-
-Notes
-- `app.py` will load `model.pkl` if present; if not it will train from `data/iris.csv` and save `model.pkl`.
-- Consider adding `model.pkl` to `.gitignore` if you prefer training on deploy.
